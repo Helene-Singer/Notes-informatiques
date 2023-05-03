@@ -61,103 +61,95 @@ Remarque : pour utiliser toutes les opérations mathématiques usuelles, impor
 • **Déclarer une variable :** ```variable = valeur```
 
 Remarque : on ne peut pas nommer une variable avec un mot
-réservé. *Liste des 32 mots réservés : and, as, assert, async, await,
-break, class, continue, def, del, elif, else, except, False, finally,
-for, from, global, if, import, in, is, lambda, None, nonlocal, not, or,
-pass, raise, return, True, try, while, with, yield.*
+réservé. 
 
-• **Affecter une valeur à une variable :** variable = valeur
+*Liste des 32 mots réservés :* ```and```, ```as```, ```assert```, ```async```, ```await```,
+```break```, ```class```, ```continue```, ```def```, ```del```, ```elif```, ```else```, ```except```, ```False```, ```finally```,
+```for```, ```from```, ```global```, ```if```, ```import```, ```in```, ```is```, ```lambda```, ```None```, ```nonlocal```, ```not```, ```or```, ```pass```, ```raise```, ```return```, ```True```, ```try```, ```while```, ```with```, ```yield```
 
-• **Affecter différentes variables simultanément :** variable1,
-variable2 = valeur1, valeur2
+• **Affecter une valeur à une variable :** ```variable = valeur```
 
-• **Permuter les valeurs de deux variables :** variable1, variable2 =
-variable2, variable1
+• **Affecter différentes variables simultanément :** ```variable1,
+variable2 = valeur1, valeur2```
 
-• **Incrémenter une valeur :** variable = variable + 1 **OU :**
-variable+=1 (pareil pour les autres opérateurs arithmétiques)
+• **Permuter les valeurs de deux variables :** ```variable1, variable2 =
+variable2, variable1```
 
-• **Décrémenter une valeur :** variable = variable - 1
+• **Incrémenter une valeur :** ```variable = variable + 1``` **OU :**
+```variable+=1``` (pareil pour les autres opérateurs arithmétiques)
+
+• **Décrémenter une valeur :** ```variable = variable - 1```
 
 ## Transtypage (cast)
 
-• **Convertir une variable en chaine de caractères :** str(variable)
+• **Convertir une variable en chaine de caractères :** ```str(variable)```
 
-• **Convertir une variable en entier :** int(variable)
+• **Convertir une variable en entier :** ```int(variable)```
 
-• **Convertir une variable en décimal :** float(variable)
+• **Convertir une variable en décimal :** ```float(variable)```
 
-• **Convertir une variable en booléen :** bool(variable)
+• **Convertir une variable en booléen :** ```bool(variable)```
 
 • **Convertir une chaine de caractère/un tuple en liste :**
-list(chaine/tuple)
+```list(chaine/tuple)```
 
-• **Convertir une liste en tuple :** tuple(liste)
+• **Convertir une liste en tuple :** ```tuple(liste)```
 
 ## Entrées et sorties
 
-• **Récupérer la saisie de l'utilisateur :** variable =
-input(\"texte_à_afficher_à_l'utilisateur\")
+• **Récupérer la saisie de l'utilisateur :** ```variable =
+input("texte_à_afficher_à_l'utilisateur")```
 
-• **Afficher une variable :** print(variable)
+• **Afficher une variable :** ```print(variable)```
 
 ## Opérations sur les chaines de caractères
 
-• **Obtenir la longueur d'une chaine :** len(\'chaine\' )
+• **Obtenir la longueur d'une chaine :** ```len('chaine')```
 
-• **Concaténer deux chaines :** chaine3 = chaine1 + chaine2
+• **Concaténer deux chaines :** ```chaine3 = chaine1 + chaine2```
 
-• **Répéter une chaine :** chaine2 = chaine1 \* nombre
+• **Répéter une chaine :** ```chaine2 = chaine1 * nombre```
 
-• **Scinder une chaine en liste de mots :**
-\'chaine\'.split(\'séparateur\')
+• **Scinder une chaine en liste de mots :** ```'chaine'.split('séparateur')```
 
-• **Concaténer une liste en une chaine :** \'séparateur\'.join(liste)
+• **Concaténer une liste en une chaine :** ```'séparateur'.join(liste)```
 
 • **Donner la position d'une sous-chaine dans une chaine :**
-\'chaine\'.find(\'sous-chaine\') (le premier indice vaut 0 ; -1 sera
+```'chaine'.find('sous-chaine')``` (le premier indice vaut 0 ; -1 sera
 retourné si la sous-chaine n'est pas trouvé)
 
 • **Donner le nombre de sous-chaines dans une chaine :**
-\'chaine\'.count(\'sous-chaine\')
+```'chaine'.count('sous-chaine')```
 
-• **Convertir une chaine en minuscules :** \'chaine\'.lower()
+• **Convertir une chaine en minuscules :** ```'chaine'.lower()```
 
-• **Convertir une chaine en majuscules :** \'chaine\'.upper()
+• **Convertir une chaine en majuscules :** ```'chaine'.upper()```
 
 • **Convertir la première lettre d'une chaine en majuscule :**
-\'chaine\'.capitalize()
+```'chaine'.capitalize()```
 
 • **Convertir la première lettre de tous les mots en majuscule :**
-\'chaine\'.title()
+```'chaine'.title()```
 
-• **Intervertir les casses d'une chaine :** \'chaine\'.swapcase()
+• **Intervertir les casses d'une chaine :** ```'chaine'.swapcase()```
 
-• **Supprimer les blancs en début et en fin de chaine :**
-\'chaine\'.strip()
+• **Supprimer les blancs en début et en fin de chaine :** ```'chaine'.strip()```
 
 • **Remplacer une sous-chaine1 par une sous-chaine2 :**
-\'chaine\'.replace(\'sous-chaine1\', \'sous‑chaine2\')
+```'chaine'.replace('sous-chaine1', 'sous‑chaine2')```
 
-• **Obtenir un caractère d'une chaine :** chaine\[position\] (commence à
+• **Obtenir un caractère d'une chaine :** ```chaine[position]``` (commence à
 0)
 
-• **Obtenir les caractères d'une chaine de la position1 à la
-position2 :** chaine\[position1:position2-1\] (il faut bien enlever 1 à
-la deuxième position)
+• **Obtenir les caractères d'une chaine de la position1 à la position2 :** ```chaine[position1:position2-1]``` (il faut bien enlever 1 à la deuxième position)
 
-• **Obtenir les caractères d'une chaine jusqu'à une position :**
-chaine\[:position-1\] (idem)
+• **Obtenir les caractères d'une chaine jusqu'à une position :** ```chaine[:position-1]``` (idem)
 
-• **Obtenir les caractères d'une chaine à partir d'une position :**
-chaine\[position:\] (idem)
+• **Obtenir les caractères d'une chaine à partir d'une position :** ```chaine[position:]``` (idem)
 
-• **Obtenir le dernier caractère d'une chaine :** chaine\[-1\]
+• **Obtenir le dernier caractère d'une chaine :** ```chaine[-1]```
 
-• **Insérer une variable dans une chaine :** chaine = f\"{variable}\" ou
-chaine = \"{formatage}\".format(variable). [Ex :]{.underline} {:3d} → 3
-entiers, {:02.0f} → 2 chiffres après la virgule, la variable est un
-nombre flottant
+• **Insérer une variable dans une chaine :** ```chaine = f"{variable}"``` ou ```chaine = "{formatage}".format(variable)```. Ex : ```{:3d}``` → 3 entiers, ```{:02.0f}``` → 2 chiffres après la virgule, la variable est un nombre flottant
 
 ## Structures de données
 
@@ -191,160 +183,145 @@ nombre flottant
 | des         |             |             |             |             |
 | éléments**  |             |             |             |             |
 +-------------+-------------+-------------+-------------+-------------+
-
+ABCDE
 ### Listes
 
-• **Déclarer une liste vide :** liste = \[\]
+• **Déclarer une liste vide :** ```liste = []```
 
-• **Déclarer une liste :** liste = \[élément1, élément2\]
+• **Déclarer une liste :** ```liste = [élément1, élément2]```
 
-• **Créer une liste de listes :** liste3 = \[liste1, liste2\]
+• **Créer une liste de listes :** ```liste3 = [liste1, liste2]```
 
-• **Créer une liste jusqu'à un nombre :** range(nombre+1)
+• **Créer une liste jusqu'à un nombre :** ```range(nombre+1)```
 
-• **Créer une liste d'un nombre à un autre nombre :** range(nombre1,
-nombre2+1)
+• **Créer une liste d'un nombre à un autre nombre :** ```range(nombre1, nombre2+1)```
 
-• **Ajouter un élément à la fin d'une liste :** liste.append(élément)
+• **Ajouter un élément à la fin d'une liste :** ```liste.append(élément)```
 
-• **Trier une liste :** liste.sort()
+• **Trier une liste :** ```liste.sort()```
 
-• **Trier une liste mais à l'inverse :** liste.reverse()
+• **Trier une liste mais à l'inverse :** ```liste.reverse()```
 
-• **Trier une liste par l'élément numéro 1 de sa sous-liste
-imbriquée :** liste.sort(key=lambda i: i\[1\])
+• **Trier une liste par l'élément numéro 1 de sa sous-liste imbriquée :** ```liste.sort(key=lambda i: i[1])```
 
-• **Rechercher l'index d'un élément dans une liste :**
-liste.index(élément)
+• **Rechercher l'index d'un élément dans une liste :** ```liste.index(élément)```
 
-• **Supprimer un élément d'une liste :** liste.remove(élément)
+• **Supprimer un élément d'une liste :** ```liste.remove(élément)```
 
-• **Supprimer le contenu d'une liste** : liste.clear()
+• **Supprimer le contenu d'une liste** : ```liste.clear()```
 
-• **Obtenir un élément d'une liste :** liste\[position\] (commence à 0)
+• **Obtenir un élément d'une liste :** ```liste[position]``` (commence à 0)
 
-• **Obtenir les éléments d'une liste de la position1 à la position2 :**
-liste\[position1:position2-1\] (il faut bien enlever 1 à la deuxième
-position)
+• **Obtenir les éléments d'une liste de la position1 à la position2 :** ```liste[position1:position2-1]``` (il faut bien enlever 1 à la deuxième position)
 
-• **Obtenir les éléments d'une liste jusqu'à une position :**
-liste\[:position-1\] (idem)
+• **Obtenir les éléments d'une liste jusqu'à une position :** ```liste[:position-1]``` (idem)
 
-• **Obtenir le dernier élément d'une liste :** liste\[-1\]
+• **Obtenir le dernier élément d'une liste :** ```liste[-1]```
 
-• **Vérifier si un élément appartient à une liste :** élément in liste
+• **Vérifier si un élément appartient à une liste :** ```élément in liste```
 
-• **Répéter un(des) élément(s) dans une liste :** liste = \[élément1,
-élément2\] \* nombre_de_fois
+• **Répéter un(des) élément(s) dans une liste :** ```liste = [élément1, élément2] * nombre_de_fois```
 
-• **Obtenir la longueur d'une liste :** len(liste )
+• **Obtenir la longueur d'une liste :** ```len(liste)```
 
-• **Donner le nombre fois où un élément se trouve dans la liste :**
-liste.count(élément)
+• **Donner le nombre fois où un élément se trouve dans la liste :** ```liste.count(élément)```
 
-• **Ajouter les éléments de la liste2 à la fin de la liste :**
-liste.extend(liste2)
+• **Ajouter les éléments de la liste2 à la fin de la liste :** ```liste.extend(liste2)```
 
-• **Manipuler deux chaines comme un dictionnaire :** zip(liste1, liste2)
+• **Manipuler deux chaines comme un dictionnaire :** ```zip(liste1, liste2)```
 
 ### Tuples
 
-• **Déclarer un tuple :** tuple = (élément1, élément2)
+• **Déclarer un tuple :** ```tuple = (élément1, élément2)```
 
-[Remarque :]{.underline} les fonctions s'appliquant aux listes
-s'appliquent aux tuples (sauf celles qui modifient les données)
+Remarque : les fonctions s'appliquant aux listes s'appliquent aux tuples (sauf celles qui modifient les données)
 
 ### Sets
 
-• **Déclarer un set :** set = {élément1, élément2}
+• **Déclarer un set :** ```set = {élément1, élément2}```
 
-• **Ajouter les éléments à un set :** set.add(élément)
+• **Ajouter les éléments à un set :** ```set.add(élément)```
 
 ### Dictionnaires
 
-• **Déclarer un dictionnaire vide :** dico = { }
+• **Déclarer un dictionnaire vide :** ```dico = { }```
 
-• **Déclarer un dictionnaire :** dico = { \"clé\": \"valeur\", \"clé\":
-\"valeur\" }
+• **Déclarer un dictionnaire :** ```dico = { "clé": "valeur", "clé": "valeur" }```
 
 • **Créer un couple clé-valeur (ou modifier la valeur de l'élément) :**
-dico\[\"clé\"\] = \"valeur\"
+```dico["clé"] = "valeur"```
 
-• **Supprimer un élément par une clé de dictionnaire :** del
-dico\[\"clé\"\]
+• **Supprimer un élément par une clé de dictionnaire :** ```del dico["clé"]```
 
-• **Supprimer un élément et renvoyer une valeur :** dico.pop(\"clé\")
+• **Supprimer un élément et renvoyer une valeur :** ```dico.pop("clé")```
 
 • **Supprimer un élément et renvoyer une clé et une valeur :**
-dico.popitem(\"clé\")
+```dico.popitem("clé")```
 
-• **Supprimer tous les éléments du dictionnaire :** dico.clear()
+• **Supprimer tous les éléments du dictionnaire :** ```dico.clear()```
 
-• **Afficher toutes les clés d'un dictionnaire :** dico.keys()
+• **Afficher toutes les clés d'un dictionnaire :** ```dico.keys()```
 
-• **Afficher toutes les valeurs d'un dictionnaire :** dico.values()
+• **Afficher toutes les valeurs d'un dictionnaire :** ```dico.values()```
 
-• **Afficher tous les couples d'un dictionnaire :** dico.items()
+• **Afficher tous les couples d'un dictionnaire :** ```dico.items()```
 
-• **Déterminer si la clé existe dans le dictionnaire :** dico.has_key()
-(si la clé est dans le dictionnaire, la fonction renvoie true, sinon
-false)
+• **Déterminer si la clé existe dans le dictionnaire :** ```dico.has_key()```
+(si la clé est dans le dictionnaire, la fonction renvoie ```True```, sinon ```False```)
 
 ### Listes en compréhension
 
 • **Liste en compréhension :** expression qui permet de générer une
 liste de manière très compacte, équivalente à une boucle for qui
-construirait la même liste en utilisant la méthode append().
+construirait la même liste en utilisant la méthode ```append()```.
 
-• [Syntaxe :]{.underline}
+• Syntaxe :
 
-result = \[valeur for x in séquence condition2\]
+```python
+result = [valeur for x in séquence condition2]
+```
 
-\# est équivalent à :
+est équivalent à :
 
-result = \[\]
-
+```python
+result = []
 for x in séquence:
+   condition2:
+      result.append(valeur)
+```
 
-condition2:
-
-result.append(valeur)
-
-[Remarque :]{.underline} la condition2 peut aller de « if x \> 23 » à
-« for y in séquence2 »
+ Remarque : la condition2 peut aller de « ```if x > 23``` » à
+« ```for y in séquence2``` »
 
 ## Structures de contrôle
 
 ### Structures conditionnelles
 
-• **Exécuter un bloc d'instructions si une condition est remplie avec
-IF :**
+• **Exécuter un bloc d'instructions si une condition est remplie avec IF :**
 
+```python
 if condition1:
-
-instructions
-
+   instructions
 elif condition2:
-
-instructions
-
+   instructions
 else:
-
-instructions
+   instructions
+```
 
 • **Syntaxe compacte du IF :**
 
+```python
 variable = valeur1 if condition else valeur2
+```
 
-\# est équivalent à :
+est équivalent à :
 
+```python
 if condition:
-
-variable = valeur1
-
+   variable = valeur1
 else:
-
-variable = valeur2
+   variable = valeur2
+```
 
 • **Exécuter un bloc d'instructions si une condition est remplie avec
 MATCH** (à partir de Python 3.10)** :**
@@ -413,7 +390,7 @@ itérant :** for k, (valeur1, valeur2) in enumerate(zip(liste1, liste2)):
 
 • **Écrire une fonction :**
 
-def fonction(paramètre1, paramètre2 : type = valeur_par_défaut) -\>
+def fonction(paramètre1, paramètre2 : type = valeur_par_défaut) ->
 type_retourné :
 
 \"\"\" Documentation de la fonction. \"\"\"
@@ -458,9 +435,9 @@ variable1, variable2 = fonction()
 
 • **Typer les paramètres d'une fonction et le retour :**
 
-def fonction(paramètre1 : type, paramètre2 : type) -\> type:
+def fonction(paramètre1 : type, paramètre2 : type) -> type:
 
-[Remarque :]{.underline} c'est une bonne pratique de typer la sortie
+ Remarque : c'est une bonne pratique de typer la sortie
 mais Python n'en tient pas compte.
 
 • **Créer une fonction anonyme, qui n'a pas de nom et qu'on ne va jamais
@@ -507,7 +484,7 @@ fonction ») : fonction()
 bibliothèque standard) (avant de pouvoir l'importer et l'utiliser comme
 module)** :** pip install paquet1, paquet2
 
-[Remarque :]{.underline} pour installer des paquets uniquement sur un
+ Remarque : pour installer des paquets uniquement sur un
 projet particulier, il faut être connecté sur l'environnement virtuel
 avant de faire « pip install ».
 
@@ -525,7 +502,7 @@ paquet==version
 • **Lister les paquets installés :** pip freeze
 
 • **Sauvegarder la liste des paquets installés dans un fichier :** pip
-freeze \> fichier.txt
+freeze > fichier.txt
 
 • **Installer tous les paquets depuis un fichier :** pip install -r
 fichier/base.txt
@@ -588,7 +565,7 @@ return \"chaine de caractère\"
 
 def \_\_dir\_\_(self):
 
-return \[\"attribut1\", \"attributN\"\]
+return [\"attribut1\", \"attributN\"]
 
 **OU :**
 
@@ -748,7 +725,7 @@ différentes via l'utilisation de classes abstraites
 
 ### Abstraction (déprécié)
 
-[Remarque :]{.underline} utiliser « from abc import ABC,
+ Remarque : utiliser « from abc import ABC,
 abstractmethod »
 
 • **Déclarer une classe abstraite** (une classe abstraite ne peut pas
@@ -846,12 +823,12 @@ continue
 • Si un objet modifiable est affecté, tout changement sur un objet
 modifiera l'autre. [Ex :]{.underline}
 
-liste1 = \[\'a\', \'b\'\] \# liste1 = \[\'a\', \'b\'\]
+liste1 = [\'a\', \'b\'] \# liste1 = [\'a\', \'b\']
 
-liste2 = liste1 \# liste2 = \[\'a\', \'b\'\]
+liste2 = liste1 \# liste2 = [\'a\', \'b\']
 
-liste1\[1\] = \'c\' \# liste1 = \[\'a\', \'c\'\], liste2 = \[\'a\',
-\'c\'\]
+liste1[1] = \'c\' \# liste1 = [\'a\', \'c\'], liste2 = [\'a\',
+\'c\']
 
 • **Faire une vraie copie d'un objet :**
 
@@ -867,13 +844,13 @@ copie = copy.deepcopy(objet_à_copier)
 
 • **Indiquer qu'on utilise une variable globale :** global variable
 
-• [Remarque :]{.underline} si, dans une fonction, on affecte une
+•  Remarque : si, dans une fonction, on affecte une
 nouvelle valeur à une variable locale qui a le même nom qu'une variable
 globale, on masque la variable globale et on crée une variable locale.
 
 ## Dates
 
-[Remarque :]{.underline} utiliser « from datetime import \* »
+ Remarque : utiliser « from datetime import \* »
 
 • **Obtenir la date complète du jour :** datetime.datetime.now()
 
@@ -885,7 +862,7 @@ globale, on masque la variable globale et on crée une variable locale.
 
 ## Chiffres aléatoires
 
-[Remarque :]{.underline} utiliser « import random »
+ Remarque : utiliser « import random »
 
 • **Créer un chiffre aléatoire entier :** chiffre =
 random.randint(minimum, maximum)
@@ -895,7 +872,7 @@ random.uniform(-minimum, maximum)
 
 ## Expressions régulières
 
-[Remarque :]{.underline} utiliser « import re »
+ Remarque : utiliser « import re »
 
 • **Créer un pattern à partir d'une expression régulière :** pattern =
 re.compile(r\"expression_régulière\")
@@ -926,7 +903,7 @@ open(\"fichier.txt\", \"r/w/a\")
 • **Écrire des données multiples dans un fichier :**
 fichier.writelines(liste)
 
-• **Ajouter des données à la fin d'un fichier :** print \>\> fichier,
+• **Ajouter des données à la fin d'un fichier :** print >> fichier,
 données
 
 • **Lire la totalité d'un fichier :** fichier.read(),
@@ -960,7 +937,7 @@ Unrestricted -Scope CurrentUser
 
 ## Module « pandas » : utilisé pour gérer des données
 
-[Remarque :]{.underline} utiliser « pip install pandas » et « import
+ Remarque : utiliser « pip install pandas » et « import
 pandas »
 
 • **Afficher les informations générales du tableau de données :**
@@ -969,67 +946,67 @@ dataframe.info()
 • **Récupérer un dataframe à partir d'un fichier CSV :** dataframe =
 pandas.read_csv(fichier)
 
-• **Obtenir les lignes k à i du dataframe :** dataframe\[k:i\]
+• **Obtenir les lignes k à i du dataframe :** dataframe[k:i]
 
 • **Obtenir les x premières lignes d'un dataframe :** dataframe.head(x)
 
 • **Obtenir les x dernières lignes d'un dataframe :** dataframe.tail(x)
 
 • **Tester si un champ commence par une chaine de caractères :**
-dataframe\[\'champ\'\].str.startswith(\'chaine\')
+dataframe[\'champ\'].str.startswith(\'chaine\')
 
 • **Obtenir uniquement les colonnes 1 et 2 d'un dataframe :**
-dataframe\[\[\'colonne1\', \'colonne2\'\]\]
+dataframe[[\'colonne1\', \'colonne2\']]
 
 • **Sauvegarder le dataframe dans un CSV :**
 dataframe.to_csv(\'fichier_csv\', index=false)
 
 • **Trier par ordre croissant une colonne :**
-dataframe.sort_values(by=\[\'colonne\'\])
+dataframe.sort_values(by=[\'colonne\'])
 
 • **Obtenir la donnée la plus fréquente d'une colonne :**
-dataframe\[\'colonne\'\].mode().iloc\[0\]
+dataframe[\'colonne\'].mode().iloc[0]
 
 • **Obtenir uniquement les lignes avec une certaine condition :**
-dataframe\[condition\] (exemples : dataframe\[dataframe\[\'colonne\'\]
-== valeur\])
+dataframe[condition] (exemples : dataframe[dataframe[\'colonne\']
+== valeur])
 
 • **Changer le format d'une date :** date = pandas.to_datetime(date,
 format=\"%m-%d-%Y\")
 
 • **Appliquer une fonction sur chaque ligne d'une colonne :** dataframe
-= dataframe\[\'colonne\'\].apply(fonction)
+= dataframe[\'colonne\'].apply(fonction)
 
 • **Obtenir la valeur moyenne / maximale / minimale (colonne1) d'une
 colonne (colonne2) :**
-dataframe.groupby(\'colonne2\')\[\'colonne1\'\].mean() / .max() / .min()
+dataframe.groupby(\'colonne2\')[\'colonne1\'].mean() / .max() / .min()
 
 • **Trouver les doublons d'une colonne :**
-dataframe\[dataframe\[\'colonne\'\].duplicated(keep=False)\].sort_values(by=\'colonne\')
+dataframe[dataframe[\'colonne\'].duplicated(keep=False)].sort_values(by=\'colonne\')
 
 • **Obtenir la répartition de la colonne1 par la colonne2** (exemple :
 professions par pays) **:**
 
-dataframe.groupby(\[\'colonne2\', \'colonne1\'\]).size().unstack()
+dataframe.groupby([\'colonne2\', \'colonne1\']).size().unstack()
 
 • **Créer des bornes délimitant des intervalles et les nommer grâce à
 des étiquettes :**
 
-bornes = \[intervalle1, ..., intervalleN\] (exemple : \[0, 10, 20, 30,
-40, 50, 60, 70, 80, 90, 100\])
+bornes = [intervalle1, ..., intervalleN] (exemple : [0, 10, 20, 30,
+40, 50, 60, 70, 80, 90, 100])
 
-étiquettes = \[\'étiquette1\', ..., \'étiquetteN\'\]
+étiquettes = [\'étiquette1\', ..., \'étiquetteN\']
 
 • **Créer une nouvelle colonne qui contiendra des étiquettes en fonction
 des intervalles et calculé selon une colonne :**
-dataframe\[\'nouvelle_colonne\'\] = pandas.cut(dataframe\[\'colonne\'\],
+dataframe[\'nouvelle_colonne\'] = pandas.cut(dataframe[\'colonne\'],
 bornes, étiquettes, include_lowest=True)
 
 • **Obtenir le nombre d'occurrences de chaque valeur unique d'une
-colonne :** dataframe\[\'colonne\'\].value_counts()
+colonne :** dataframe[\'colonne\'].value_counts()
 
 • **Obtenir le pourcentage d'une colonne :**
-dataframe\[\'colonne\'\].value_counts(normalize=True) \* 100
+dataframe[\'colonne\'].value_counts(normalize=True) \* 100
 
 • **Afficher un histogramme :**
 
@@ -1037,10 +1014,10 @@ dataframe\[\'colonne\'\].value_counts(normalize=True) \* 100
 
 --- **créer une liste pour définir les bornes d'intervalles afin de
 diviser les données d'une colonne en groupes d'une certaine valeur :**
-liste = range(0, int(dataframe\[\'colonne\'\].max()), 10)
+liste = range(0, int(dataframe[\'colonne\'].max()), 10)
 
 --- **tracer l'histogramme grâce aux données d'une colonne et à des
-bornes d'intervalles :** plt.hist(dataframe\[\'colonne\'\],
+bornes d'intervalles :** plt.hist(dataframe[\'colonne\'],
 bins=bornes_d'intervalles, edgecolor=\'black\')
 
 --- **ajouter un titre :** plt.title(\'titre\')
@@ -1058,7 +1035,7 @@ plt.ylabel(\'étiquette\')
 
 ## Module « pymysql » : 
 
-[Remarque :]{.underline} utiliser « pip install pymysql » et « import
+ Remarque : utiliser « pip install pymysql » et « import
 pymysql »
 
 • **Créer une connexion à la base de données :**
@@ -1077,8 +1054,8 @@ utiliser dans une boucle)** :**
 
 sql = \"INSERT INTO table (champ1, ..., champN) VALUES (%s, ..., %s)\"
 
-curseur.execute(sql, (ligne\[\'colonne1\'\], ...,
-ligne\[\'colonneN\'\]))
+curseur.execute(sql, (ligne[\'colonne1\'], ...,
+ligne[\'colonneN\']))
 
 • **Valider les modifications apportées à la base de données :**
 connexion.commit()
@@ -1088,7 +1065,7 @@ associées** (à ne pas oublier) : connexion.close()
 
 ## Module « sys »
 
-[Remarque :]{.underline} utiliser « import sys »
+ Remarque : utiliser « import sys »
 
 • **Vérifier le système Python utilisé :** print(sys.argv)
 
@@ -1113,7 +1090,7 @@ print(sys.builtin_module_names)
 
 ## Module « os »
 
-[Remarque :]{.underline} utiliser « import os »
+ Remarque : utiliser « import os »
 
 • **Vérifier le système d'exploitation utilisé :** print(os.name) \# nt
 pour Windows
